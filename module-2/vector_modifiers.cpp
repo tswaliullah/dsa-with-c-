@@ -17,10 +17,19 @@ int main()
     //     cout << v2[i] << " ";
     // }
 
+    // replace(v.begin(), v.end(), 2, 100);
+    // for (int x : v)
+    //     cout << x << " ";
 
-    replace(v.begin(), v.end(), 2, 100);
-    for (int x : v)
-        cout << x << " ";
+    auto it = find(v.begin(), v.end(), 100);
+    if (it == v.end())
+    {
+        cout << "Not found";
+    }
+    else
+    {
+        cout << "Found";
+    }
 
     return 0;
 }
